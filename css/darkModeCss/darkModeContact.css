@@ -1,0 +1,68 @@
+/*colors:
+-#2a2a2a3e
+#1B1D21
+*/
+
+body {
+    overflow-x:hidden;
+  }
+  .Headerovi, .Headeroviii {
+    background-color: #2a2a2a3e;
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    border-width: 5px 10px;
+    margin-top: 30px;
+    height: 450px;
+    width: 500px;
+    left: 300px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .Headerovi:hover, .Headeroviii:hover {
+    box-shadow: 0px 20px 30px rgba(215, 215, 215, 0.3);
+  }
+  
+  .iCantNameThings {
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 8px;
+    margin-left: 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .iconsDiscord {
+    height: 20px;
+    width: auto;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('path/to/discord-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .iconsDiscord:hover {
+    transform: rotate(360deg);
+  }
+  .Spanovi {
+    align-items:Center;
+    justify-content:center;
+    left: 40%;
+  }
+  .Kategorij:Hover {
+    border-radius:6px;
+    background-color: #b3b3b3;
+    cursor:pointer;
+  }
+  .Kategorij {
+    margin-top: -20px;
+  }

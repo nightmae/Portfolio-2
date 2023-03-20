@@ -1,0 +1,64 @@
+body {
+  overflow-x:hidden;
+}
+.Headerovi {
+    width: 1000px;
+}
+.iCantNameThings {
+    color: #141f21;
+    margin-right: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 100px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    letter-spacing: 0.1em;
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+  .iCantNameThings:Hover {
+    cursor:pointer;
+  }
+  .Fact {
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFD700;;
+    z-index: 40;
+    display: block;
+    margin-left: auto;
+    margin-top: 100px;
+  }
+.Fact:Hover {
+    cursor:pointer;
+    opacity: 80%;
+}

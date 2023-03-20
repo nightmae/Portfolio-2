@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+  overflow-x: hidden;
+  }
+.Headerovii {
+  color: #141f21;
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 4px;
+  margin-left: 6px;
+  margin-top: -12px;
+  margin-bottom: 4px;
+}
+  /* Main container */
+  .Headerovi, .Headeroviii {
+  background-color: white;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  height: 500px;
+  width: 1100px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  }
+  
+  /* Text inside container */
+  .iCantNameThings {
+  
+  color: #141f21;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 10px 10px;
+  padding: 6px;
+  animation: slideUp 1s ease-in-out;
+  }
+  .iCantNameThings2 {
+    color: #141f21;
+    font-size: 16px;
+    padding: 40px;
+    margin-top: 100px !important;
+    margin-left: 20px !important; 
+    font-family: 'Poppins', sans-serif;
+    margin: 4px 10px;
+    padding: 4px;
+    animation: slideUp 1s ease-in-out;
+    }
+  
+  /* Hover effect on container */
+  .Headerovi:hover, .Headeroviii:hover {
+  border-color: #c7a500;
+  cursor: pointer;
+  animation: pulse 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeIn {
+  from {
+  opacity: 0;
+  transform: translateY(20px);
+  }
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  }
+  }
+  
+  @keyframes slideUp {
+  from {
+  opacity: 0;
+  transform: translateY(20px);
+  }
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  }
+  }
+  
+  @keyframes pulse {
+  from {
+  transform: scale(1);
+  }
+  to {
+  transform: scale(1.05);
+  }
+  }
+.content {
+  visibility: hidden;
+  height:100vh;
+}
+.header {
+  position:fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  min-height: 60px; /* changed height to min-height */
+  z-index: 20;
+}
+
+.SpansnHeaders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Spanovi {
+  font-size: 24px;
+  font-weight: bold;
+  top: 40%; 
+  left: 47%;
+}
+.hamburger {
+  z-index: 20;
+}
+.Expand {
+  margin-top: 3%;
+  transition: all 0.3s ease-in-out;
+  }
+  .Expand:hover {
+  background-color: #FEDCBA; /* Change to the desired hover color /
+  transform: scale(1.1); / Optional: add a slight scale increase on hover */
+  }
