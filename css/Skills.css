@@ -2,10 +2,10 @@
 
 /* Global styles */
 body {
-  background-color: #d1d5db;
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -14,9 +14,8 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  border: 2px solid transparent;
   border-radius: 6px;
-  border-width: 5px 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   height: 80px;
   padding: 0 20px;
   position: fixed;
@@ -24,57 +23,59 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 40px);
-  }
-  .hamburger {
-    position: fixed;
-    top: 20px;
-    left:70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 20px;
-    width: 30px;
-    cursor: pointer;
-    z-index: 3;
-  }
-  
-  .hamburger span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: #000000;
-    border-radius: 3px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .hamburger:hover span {
-    transform: scaleX(1.1);
-  }
-  
-  .hamburger.open span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  
-  .hamburger.open span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger.open span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
+  z-index: 100;
+}
+
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover span {
+  transform: scaleX(1.1);
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
 #sidebarMenu {
   position: fixed;
   top: 60px;
   left: 0;
   bottom: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   width: 200px;
   padding: 20px 0;
-  z-index: 2;
+  z-index: 99;
   overflow-y: hidden;
-  overflow-x:hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  overflow-x: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
 }
 
@@ -92,7 +93,8 @@ body {
   transition: all 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
-  }
+}
+
 .sbLink:before {
   content: "";
   position: absolute;
@@ -104,19 +106,19 @@ body {
   transform: rotate(45deg);
   transition: all 0.3s ease-in-out;
   z-index: -1;
-  }
-  .sbLink:hover:before {
-    top: 0;
-    left: 0;
-    }
-    
-    .sbLink:hover {
-    background-color: #5a5a5a;
-    border: 2px solid transparent;
-    display: flex;
-    transform: scale(1.05);
-    }
+}
 
+.sbLink:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.sbLink:hover {
+  background-color: #5a5a5a;
+  border: 2px solid transparent;
+  display: flex;
+  transform: scale(1.05);
+}
 
 .sbLink:active {
   opacity: 80%;
@@ -140,6 +142,7 @@ body {
   opacity: 80%;
   vertical-align: middle;
 }
+
 .Kucarina {
   height: 28px;
   margin-left: 28px;
@@ -159,8 +162,6 @@ body {
   font-weight: 700;
 }
 
-
-
 /* Main content */
 .Spanovi {
   font-family: sans-serif;
@@ -168,12 +169,11 @@ body {
   font-size: 30px;
   color: #041315;
   position: fixed;
-  top: 20%;
-  left: 42%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 98;
   opacity: 0;
-  animation: fadeIn 0.5s ease-in-out forwards;
+  animation: fadeIn 0.5s
 }
 .Span {
   font-size: 14px;
@@ -285,10 +285,11 @@ body {
   box-shadow: var(--header-box-shadow);
   display: flex;
   flex-direction: column;
-  height: 550px;
+  height: 600px;
   left: 300px;
   position: absolute;
   width: 300px;
+  margin-top: 45px;
   z-index: 50;
   animation: slideInLeft 1s ease-in-out forwards;
 }
@@ -377,7 +378,6 @@ body {
   }
 }
 
-
 .HeaderoviiTrans {
   display: flex;
   align-items: center;
@@ -435,4 +435,7 @@ body {
   }
   ::selection {
     color:inherit;
+}
+#checkbox {
+    display: none;
 }

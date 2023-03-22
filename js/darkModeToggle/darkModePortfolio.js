@@ -7,10 +7,6 @@ if (darkM) {
     newLink1.rel = 'stylesheet';
     newLink1.href = 'css/darkModeCss/darkModePortfolio.css';
 
-    const newLink2 = document.createElement('link');
-    newLink2.rel = 'stylesheet';
-    newLink2.href = 'css/darkModeCss/darkTheme.css';
-
     // Check local storage for the link key
     const isDarkMode = localStorage.getItem(linkKey) === 'true';
 
@@ -31,7 +27,7 @@ if (darkM) {
       defaultLink2.href = 'css/Skills.css';
       document.head.appendChild(defaultLink2);
 
-      const portfolioJs = document.querySelector('script[src="js/Portfolio.js"]');
+      const portfolioJs = document.querySelector('script[src="js/Anders.js"]');
       if (portfolioJs) {
         portfolioJs.remove();
       }
@@ -46,7 +42,7 @@ if (darkM) {
       }
       document.head.appendChild(newLink1);
 
-      const portfolioJs = document.querySelector('script[src="js/Portfolio.js"]');
+      const portfolioJs = document.querySelector('script[src="js/Anders.js"]');
       if (portfolioJs) {
         portfolioJs.remove();
       }
@@ -65,12 +61,7 @@ if (darkM) {
     newLink1.href = 'css/darkModeCss/darkModePortfolio.css';
     document.head.appendChild(newLink1);
 
-    const newLink2 = document.createElement('link');
-    newLink2.rel = 'stylesheet';
-    newLink2.href = 'css/darkModeCss/darkTheme.css';
-    document.head.appendChild(newLink2);
-
-    const portfolioJs = document.querySelector('script[src="js/Portfolio.js"]');
+    const portfolioJs = document.querySelector('script[src="js/Anders.js"]');
     if (portfolioJs) {
       portfolioJs.remove();
     }

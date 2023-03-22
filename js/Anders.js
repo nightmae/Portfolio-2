@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
+/*
+ocument.addEventListener('DOMContentLoaded', function() {
   const body = document.querySelector('body');
   const header = document.querySelector('.header');
   const sidebarMenu = document.querySelector('#sidebarMenu');
@@ -29,3 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+*/

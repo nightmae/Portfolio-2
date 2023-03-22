@@ -105,9 +105,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #2a2a2a3e;
+  color: #000000;
   min-height: 60px; /* changed height to min-height */
-  z-index: 20;
+  z-index: 90;
 }
 
 .SpansnHeaders {

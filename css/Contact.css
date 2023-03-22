@@ -61,3 +61,41 @@ body {
 .Kategorij {
   margin-top: -20px;
 }
+@media only screen and (max-width: 767px) {
+  body {
+  overflow-x: hidden;
+  }
+  
+  .Headerovi, .Headeroviii {
+  height: 300px;
+  width: 350px;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: 20px;
+  }
+  
+  .iCantNameThings {
+  font-size: 16px;
+  padding: 6px;
+  margin-left: 4px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  }
+  
+  .iconsDiscord {
+  height: 16px;
+  margin-right: 3px;
+  }
+  
+  .Spanovi {
+  left: 30%;
+  }
+  
+  .Kategorij:hover {
+  background-color: #bbbbbb;
+  }
+  
+  .Kategorij {
+  margin-top: -10px;
+  }
+  }

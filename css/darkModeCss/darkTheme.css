@@ -290,10 +290,11 @@ body {
     box-shadow: var(--header-box-shadow);
     display: flex;
     flex-direction: column;
-    height: 550px;
+    height: 600px;
     left: 300px;
     position: absolute;
     width: 300px;
+    margin-top: 50px;
     z-index: 50;
     animation: slideInLeft 1s ease-in-out forwards;
   }

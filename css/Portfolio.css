@@ -218,3 +218,74 @@ body {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 767px) {
+  /* CSS styles for mobile devices with a maximum width of 767px */
+
+  /* Adjust margin-top of body to make space for header */
+  body {
+    margin-top: 60px;
+  }
+
+  /* Change font-size and padding of main heading */
+  .Paragraph {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  /* Adjust position of hamburger icon */
+  .hamburger {
+    top: 20px;
+    left: 20px;
+  }
+
+  /* Adjust font-size and margin of navigation links */
+  .rightSection a {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  /* Hide sidebar menu */
+  #sidebarMenu {
+    transform: translateX(-100%);
+  }
+
+  /* Adjust position of header */
+  .header {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  /* Adjust font-size and margin of navigation links */
+  .rightSection a {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  /* Adjust font-size and margin of sidebar links */
+  .sbLink {
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .Kuca {
+    height: 22px;
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+
+  .Kucarina {
+    height: 22px;
+    margin-left: 18px;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+
+  .GStr {
+    font-size: 16px;
+  }
+
+  .oNamaa {
+    font-size: 16px;
+  }
+}

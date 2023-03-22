@@ -17,6 +17,7 @@ body {
     justify-content:center;
     left: calc(50% - 6em); /* Adjust the value to center the text */
 }
+
 .Hajperlink2 {
   text-decoration: none;
   color: black;

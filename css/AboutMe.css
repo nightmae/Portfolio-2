@@ -129,3 +129,45 @@ body {
   background-color: #FEDCBA; /* Change to the desired hover color /
   transform: scale(1.1); / Optional: add a slight scale increase on hover */
   }
+
+  @media screen and (max-width: 767px) {
+    /* Main container */
+    .Headerovi, .Headeroviii {
+    height: auto;
+    width: 100%;
+    left: 0;
+    border: none;
+    }
+    
+    /* Text inside container */
+    .iCantNameThings {
+    font-size: 16px;
+    margin: 6px 10px;
+    padding: 4px;
+    }
+    
+    .iCantNameThings2 {
+    font-size: 14px;
+    padding: 20px;
+    margin-top: 60px !important;
+    margin-left: 10px !important;
+    }
+    
+    /* Spanovi */
+    .Spanovi {
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    
+    /* Header */
+    .header {
+    min-height: 50px;
+    }
+    
+    /* Hamburger */
+    .hamburger {
+    margin-right: 10px;
+    }
+    }
