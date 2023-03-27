@@ -17,6 +17,20 @@ body {
   margin-top: -12px;
   margin-bottom: 4px;
 }
+#sidebarMenu {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  background-color: #2a2a2a;
+  width: 200px;
+  padding: 20px 0;
+  z-index: 2;
+  overflow-y: hidden;
+  overflow-x:hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease-in-out;
+}
   /* Main container */
   .Headerovi, .Headeroviii {
   background-color: #1B1D21;
@@ -37,7 +51,7 @@ body {
   /* Text inside container */
   .iCantNameThings {
   
-  color: #ffffff63;
+  color: #ffffff;
   font-size: 20px;
   font-family: sans-serif;
   margin: 10px 10px;
@@ -99,13 +113,16 @@ body {
 .content {
   visibility: hidden;
   height:100vh;
+  background-color:#1B1D21;
+  margin-left: -20px; 
+  margin-top: -15px;
 }
 .header {
   position:fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #000000;
+  background-color: #2a2a2a !important;
   min-height: 60px; /* changed height to min-height */
   z-index: 90;
 }

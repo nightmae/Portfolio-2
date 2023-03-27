@@ -1,0 +1,100 @@
+.ScUl {
+    position: relative;
+    display:flex;
+    flex-direction:row;
+    color:white;
+    top: -200px;
+    left: -10%;
+    margin-top: -200px; /* Add this line */
+  }
+    .ASS {
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        color: #ffffff;
+        position: fixed;
+        top: 20%;
+        left: calc(55% - 4em); /* Adjust the value to center the text */
+        z-index: 98;
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in-out forwards;
+        text-align: center;
+      }
+    .Schedule {
+        position:relative;
+        bottom:0;
+    }
+    .Schedule ul {
+    text-align:center;
+    padding:10px;
+    margin: 0 10px;
+    border-radius:6px;
+    }
+    .Schedule li {
+        border: 2px solid #fff;
+        text-align: center;
+        padding: 10px;
+        margin: 0 10px;
+        border-radius: 6px;
+        list-style: none;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .Schedule li:hover {
+        opacity: 0.9;
+        transform: scale(1.1);
+        cursor: pointer;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      }
+    
+    .Expand {
+        position:Relative;
+        color:White;
+        font-weight: 500;
+        text-align:center;
+        left:15%;
+        top: -180px; /* You may need to adjust this value */
+      }
+    
+    .ScDiv {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s ease-in-out;
+    }
+    
+    .ScDiv .content {
+        height: 0;
+        transition: height 0.5s ease-in-out;
+        overflow: hidden;
+      }
+      
+      .content-show {
+        height: auto;
+      }
+
+      .Table {
+        position:relative;
+        left: calc(-50% + 5px);
+        color:white;
+        display:flex;
+        flex-direction: row;
+        opacity: 0.8;
+      }
+      .Table ul {
+        border: 2px solid white;
+        text-align:center;
+        padding:15px;
+        margin-top: 200px;
+        border-radius:6px;
+        list-style:none;
+        }
+        .Time {
+            width: 100px;
+            
+        }
+        .Activity {
+            width: 200px;
+          }
+        .Desc {
+            width: 400px;
+        }

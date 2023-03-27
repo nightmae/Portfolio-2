@@ -1,0 +1,50 @@
+.Schedule {
+    position:relative;
+    bottom:0;
+    left: calc(25%)
+}
+.Table {
+    top: calc(105%);
+  }
+  .Time li {
+    margin-top: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    text-align:center;
+    padding:15px;
+    list-style:none;
+    border-radius: 6px;
+}
+.Activity li {
+    margin-top: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    text-align:center;
+    padding:15px;
+    list-style:none;
+    border-radius: 6px;
+}
+.Sleeping, .School {
+    height: 425px;
+    text-align:center;
+}
+.Any {
+    height: 160px;
+}
+.Slp2 {
+    height: 100px;
+}
+.Desc li {
+    margin-top: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    text-align:left;
+    padding:15px;
+    list-style:none;
+    border-radius: 6px;
+}
+.Timey, .Activityy, .Description {
+        border: 2px solid rgb(0, 0, 0);
+        background-color: rgba(84, 88, 94, 0.396);
+        text-align:center;
+        padding:20px;
+        list-style:none;
+        border-radius: 6px;
+}
