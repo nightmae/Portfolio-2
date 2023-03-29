@@ -1,0 +1,69 @@
+:root {
+    --atom-size: 180px;
+    --atom-color-hex: #00d8ff;
+    --atom-color-rgb: 0, 216, 255;
+    --nucleus-size: calc(var(--atom-size) / 5);
+    --electron-color-hex: #99f8ff;
+    --electron-size : calc(var(--atom-size) / 25);
+    --electron-orbit-size : calc(var(--atom-size) / 2.5);
+    --electron-speed : 1.2s;
+    --electron-speed-alpha : 1s;
+    --electron-speed-omega : .8s;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #1f1f1f;
+}
+body {
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+}
+*, *:before, *::after { box-sizing: border-box; }
+
+.react {
+    height: 200px;
+    animation: lightSpeedInLeft 0.9s ease-out;
+}
+.react {
+    animation: rotation 0.9s ease-out infinite;
+}
+
+@keyframes lightSpeedInLeft {
+    from {
+      transform: translate3d(-100%, 0, 0) skewX(30deg) rotate(0deg);
+      opacity: 0;
+    }
+  
+    60% {
+      transform: skewX(-20deg) rotate(180deg);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: skewX(5deg) rotate(270deg);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0) skewX(0deg) rotate(360deg);
+    }
+  }
+  .lightSpeedInLeft {
+    animation-name: lightSpeedInLeft;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes rotation {
+    from {
+        transform: translate3d(0, 0, 0) skewX(30deg) rotate(0deg);
+        opacity: 0;
+      }
+      to {
+        transform: translate3d(0, 0, 0) skewX(0deg) rotate(360deg);
+      }
+  }

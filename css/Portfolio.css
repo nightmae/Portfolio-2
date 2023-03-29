@@ -21,7 +21,41 @@ body {
   text-align: center;
   text-shadow: 2px 2px black;
   transition: all 0.2s ease-in-out;
+  animation: leftA 1s ease-out
 }
+@keyframes leftA {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
 
 .Paragraph:hover {
   color: #f5f5f5;
@@ -65,7 +99,38 @@ body {
   width: 30px;
   cursor: pointer;
   z-index: 3;
+  animation: expands 0.7s ease-out
 }
+@keyframes expands {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
 
 .hamburger span {
   display: block;
@@ -136,6 +201,7 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   transition: all 0.3s ease-in-out;
 }
+
 
 .sbLink {
   background-color: #FFD700;
