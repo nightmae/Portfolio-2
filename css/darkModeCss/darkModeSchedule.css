@@ -98,3 +98,16 @@
         .Desc {
             width: 400px;
         }
+        .Spanovi {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 30px;
+          color: #000000;
+          position: fixed;
+          top: 20%;
+          left: calc(50% - 6em) !important; 
+          z-index: 98;
+          opacity: 0;
+          animation: fadeIn 0.5s ease-in-out forwards;
+          text-align: center;
+        }
