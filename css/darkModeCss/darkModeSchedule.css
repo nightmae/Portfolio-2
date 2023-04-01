@@ -4,7 +4,7 @@
     flex-direction:row;
     color:white;
     top: -200px;
-    left: -10%;
+    left: 0% !important;
     margin-top: -200px; /* Add this line */
   }
     .ASS {

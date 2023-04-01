@@ -85,6 +85,27 @@
     :where(h1, h2, h3, h4, h5, h6) + p {
     text-indent: 0;
     }
+    h1 {
+        animation: zoomInLeft 0.5s ease-out;
+    }
+    @keyframes zoomInLeft {
+        from {
+          opacity: 0;
+          transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+          animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+      
+        60% {
+          opacity: 1;
+          transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+          animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        }
+      }
+      
+      .zoomInLeft {
+        animation-name: zoomInLeft;
+      }
+      
     
     :where(h1, h2, h3, h4, h5, h6) {
     margin-block-start: calc(var(--stack) * 1.5);
