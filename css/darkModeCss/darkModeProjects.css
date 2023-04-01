@@ -2,7 +2,15 @@
 -#2a2a2a3e
 #1B1D21
 */
-
+.ScUl {
+  position: relative;
+  display:flex;
+  flex-direction:row;
+  color:white;
+  top: -200px;
+  left: 20%;
+  margin-top: -200px; /* Add this line */
+}
 
 body {
     overflow-x:hidden;
@@ -59,7 +67,7 @@ body {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    margin-top: 90%;
+    margin-top: 125%;
     margin-left: -10%;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(165, 165, 165, 0.2);

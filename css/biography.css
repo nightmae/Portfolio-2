@@ -1,0 +1,165 @@
+:root {
+    font-size: clamp(100%, 90% + 0.5vi, 150%);
+    line-height: 1.35;
+    color-scheme: dark light;
+    }
+    
+    *,
+    *::before,
+    *::after {
+    font-feature-settings: "kern";
+    font-kerning: normal;
+    -moz-osx-font-smoothing: grayscale !important;
+    -webkit-font-smoothing: antialiased !important;
+    box-sizing: border-box;
+    }
+    
+    *:focus-visible {
+    outline: 2px solid crimson;
+    outline-offset: 2px;
+    }
+    
+    *::selection {
+    background: crimson;
+    }
+    
+    :where(a) {
+    color: inherit;
+    text-decoration-color: crimson;
+    text-decoration-style: wavy;
+    text-underline-offset: 2px;
+    }
+    
+    :where(a):hover {
+    text-decoration-color: currentcolor;
+    }
+    
+    :where(a):focus {
+    text-decoration: none;
+    }
+    
+    :root {
+    --gutter: clamp(2.125ch, 2.5vmax, 2.5ch);
+    --stack: clamp(1.25ex, 2.5vmax, 1.75ex);
+    --line-length: 70ch;
+    --ol-style-type: decimal;
+    }
+    
+    html,
+    body {
+    margin: 0;
+    padding: 0;
+    }
+    
+    :where(header, main, footer) {
+    padding-inline: calc((100vw - min(var(--line-length), 80vw)) / 2);
+    padding-block: 5vmax;
+    }
+    
+    :where(main) {
+    border-block: 1px solid;
+    border-image-source: linear-gradient(to right, transparent, crimson, transparent);
+    border-image-slice: 1;
+    }
+    
+    :where(ol, ul, figure, *:not(p) + p) {
+    margin-block-start: var(--stack);
+    }
+    
+    :where(li ol, li ul) {
+    margin-block-start: 0;
+    }
+    
+    :where(li) {
+    margin-inline-start: var(--list-indent, 0);
+    }
+    
+    :where(li li) {
+    margin-inline-start: var(--list-indent, var(--gutter));
+    }
+    
+    :where(p:not(:first-of-type)) {
+    text-indent: var(--gutter);
+    }
+    
+    :where(h1, h2, h3, h4, h5, h6) + p {
+    text-indent: 0;
+    }
+    
+    :where(h1, h2, h3, h4, h5, h6) {
+    margin-block-start: calc(var(--stack) * 1.5);
+    }
+    
+    :where(h1, h2, h3, h4, h5, h6) + *:not(h1, h2, h3, h4, h5, h6) {
+    margin-block-start: calc(var(--stack) / 1.5);
+    }
+    
+    :root {
+    --font-size-4xl: 3.999rem;
+    --font-size-3xl: 2.999rem;
+    --font-size-2xl: 2rem;
+    --font-size-xl: 1.666rem;
+    --font-size-lg: 1.166rem;
+    --font-size-md: 1rem;
+    }
+    
+    :where(h1) {
+    font-size: var(--font-size-4xl);
+    }
+    
+    :where(h2) {
+    font-size: var(--font-size-3xl);
+    }
+    
+    :where(h3) {
+    font-size: var(--font-size-2xl);
+    }
+    
+    :where(h4) {
+    font-size: var(--font-size-xl);
+    }
+    
+    :where(h5) {
+    font-size: var(--font-size-lg);
+    }
+    
+    :where(h6) {
+    font-size: var(--font-size-md);
+    }
+    
+    :where(h1, h2, h3, h4, h5, h6) {
+    line-height: 1.1;
+    }
+    
+    :where(h1) {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 0 2px crimson;
+    }
+    
+    :where(header) {
+    font-size: 1.166rem;
+    }
+    
+    :where([lang^="en"] header p:first-of-type)::first-letter {
+    float: left;
+    margin-inline-end: 0.5ch;
+    padding: 0 0.5ch;
+    font-size: 2.6em;
+    color: crimson;
+    border: 3px double;
+    }
+    
+    @-moz-document url-prefix() {
+    :where([lang^="en"] header p:first-of-type)::first-letter {
+    padding-block: 0.8ex;
+    }
+    }
+    
+    :where(sup) {
+    line-height: 1;
+    }
+    
+    :root {
+    font-family: system-ui, sans-serif;
+    }
