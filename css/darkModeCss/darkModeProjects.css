@@ -2,15 +2,6 @@
 -#2a2a2a3e
 #1B1D21
 */
-.ScUl {
-  position: relative;
-  display:flex;
-  flex-direction:row;
-  color:white;
-  top: -200px;
-  left: 20%;
-  margin-top: -200px; /* Add this line */
-}
 
 body {
     overflow-x:hidden;

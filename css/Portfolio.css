@@ -3,7 +3,7 @@
 /* Set global font and background color */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #FFD700;
+  background-color:#1B1D21;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,10 @@ body {
   text-align: center;
   text-shadow: 2px 2px black;
   transition: all 0.2s ease-in-out;
-  animation: leftA 1s ease-out
+  animation: leftA 1s ease-out;
+  border: 1px solid black;
+  padding: 0.5em;
+  border-radius: 0.1em;
 }
 @keyframes leftA {
   from,
@@ -73,11 +76,12 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #FFD700;
+  background-color: #2a2a2a3e;
+  border: 2px solid transparent;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   animation: slide-down 0.5s ease-out;
+  z-index:100;
 }
-
 
 /* Style for the hamburger icon */
 .leftSection {
@@ -186,25 +190,24 @@ body {
     transform: translateY(0);
   }
 }
-
 #sidebarMenu {
   position: fixed;
-  top: 60px;
+  top: 3.7em;
+  border-radius: 0.2em;
   left: 0;
   bottom: 0;
-  background-color: #FFD700;
+  background-color: #2a2a2a3e;
   width: 200px;
   padding: 20px 0;
-  z-index: 2;
+  z-index: 99;
   overflow-y: hidden;
-  overflow-x:hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  overflow-x: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
 }
 
-
 .sbLink {
-  background-color: #FFD700;
+  background-color: #2a2a2a3e;
   margin-top: 20px;
   height: 60px;
   display: flex;
@@ -225,7 +228,7 @@ body {
   left: -100%;
   width: 200%;
   height: 200%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #2a2a2a3e;
   transform: rotate(45deg);
   transition: all 0.3s ease-in-out;
   z-index: -1;
@@ -236,7 +239,7 @@ body {
     }
     
     .sbLink:hover {
-    background-color: #c7a500;
+    background-color: #999898;
     border: 2px solid transparent;
     display: flex;
     transform: scale(1.05);
@@ -250,7 +253,7 @@ body {
 
 .Hajperlink {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -277,13 +280,14 @@ body {
 .GStr {
   font-family: sans-serif;
   font-weight: 700;
+  color:black;
 }
 
 .oNamaa {
   font-family: sans-serif;
   font-weight: 700;
+  color:black;
 }
-
 @media only screen and (max-width: 767px) {
   /* CSS styles for mobile devices with a maximum width of 767px */
 

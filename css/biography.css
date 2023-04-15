@@ -180,7 +180,21 @@
     :where(sup) {
     line-height: 1;
     }
-    
+    /*
+    .bubble:after {
+    content: '';
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    position:absolute;
+    bottom:0;
+    height:85%;
+    width:100%;
+    left: -0.01%;
+    overflow-x:hidden;
+    background-color:crimson;
+    z-index: -1;
+    }
+    */
     :root {
     font-family: system-ui, sans-serif;
     }

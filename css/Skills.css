@@ -66,7 +66,8 @@ body {
 
 #sidebarMenu {
   position: fixed;
-  top: 60px;
+  top: 5.2em;
+  border-radius: 0.2em;
   left: 0;
   bottom: 0;
   background-color: #ffffff;
@@ -81,7 +82,7 @@ body {
 
 .sbLink {
   background-color: #ffffff;
-  margin-top: 20px;
+  margin-top: 10px;
   height: 60px;
   display: flex;
   justify-content: center;

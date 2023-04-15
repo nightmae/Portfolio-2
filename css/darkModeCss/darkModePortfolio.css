@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-
-/*colors:
--#2a2a2a3e
-#1B1D21
-*/
+#sidebarMenu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    background-color: #2a2a2a;
+    width: 200px;
+    padding: 20px 0;
+    z-index: 2;
+    overflow-y: hidden;
+    overflow-x:hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+  }
